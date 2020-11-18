@@ -3,15 +3,24 @@
 
 --use CADASTRO;
 
---use master
---drop database cadastro
---drop table compra
+--use master;
+--drop database cadastro;
+
+
+--drop table PRODUTO;
+--drop table ESTABELECIMENTO;
+--drop table LOCALIDADE;
+--drop table FORMA_PAGAMENTO;
+--drop table COMPRA;
+--drop table COMPRA_ITEM;
+
 
 --select * from PRODUTO;
 --select * from ESTABELECIMENTO;
 --select * from LOCALIDADE;
 --select * from FORMA_PAGAMENTO;
 --select * from COMPRA;
+--select * from COMPRA_ITEM;
 
 create table PRODUTO (
 	COD_INT_PRO int identity,
@@ -43,15 +52,26 @@ create table FORMA_PAGAMENTO (
 create table COMPRA (
 	COD_COMP int identity,
 	DAT_COMP datetime not null,
-	VLR_ITEM_COMP money not null,
+	QTD_ITENS_COMP int null,
+	VLR_COMP money not null,
+	OBS_COMPRA varchar(500) null,
 	FORM_PAG_COMP int not null,
-	COD_INT_PRO int not null,
 	COD_EST int not null,
 	COD_LOC int not null,
 	constraint PK_COD_COMP_COMPRA primary key (COD_COMP),
-	constraint FK_COD_PRO_PRODUTO foreign key (COD_INT_PRO) references PRODUTO(COD_INT_PRO),
 	constraint FK_COD_EST_ESTABELECIMENTO foreign key (COD_EST) references ESTABELECIMENTO(COD_EST),
 	constraint FK_COD_LOC_LOCALIDADE foreign key (COD_LOC) references LOCALIDADE(COD_LOC),
+);
+
+create table COMPRA_ITEM (
+	COD_COMP_ITEM int identity,
+	COD_COMP int not null,
+	COD_INT_PRO int not null,
+	QTD_COMP_ITEM int not null,
+	VLR_UNT_COMP_ITEM money not null,
+	constraint PK_COD_COMP_COMPRA_ITEM primary key (COD_COMP_ITEM),
+	constraint FK_COD_COMP_COMPRA foreign key (COD_COMP) references COMPRA(COD_COMP),
+	constraint FK_COD_PRO_PRODUTO foreign key (COD_INT_PRO) references PRODUTO(COD_INT_PRO),
 );
 
 
