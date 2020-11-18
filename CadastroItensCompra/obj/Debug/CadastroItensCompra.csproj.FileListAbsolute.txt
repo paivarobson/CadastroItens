@@ -1,0 +1,10 @@
+D:\Arquivos D\DESENVOLVIMENTO\Fontes\CadastroItens\CadastroItensCompra\bin\Debug\CadastroItensCompra.exe.config
+D:\Arquivos D\DESENVOLVIMENTO\Fontes\CadastroItens\CadastroItensCompra\bin\Debug\CadastroItensCompra.exe
+D:\Arquivos D\DESENVOLVIMENTO\Fontes\CadastroItens\CadastroItensCompra\bin\Debug\CadastroItensCompra.pdb
+D:\Arquivos D\DESENVOLVIMENTO\Fontes\CadastroItens\CadastroItensCompra\obj\Debug\CadastroItensCompra.csprojAssemblyReference.cache
+D:\Arquivos D\DESENVOLVIMENTO\Fontes\CadastroItens\CadastroItensCompra\obj\Debug\CadastroItensCompra.CadastroCompra.resources
+D:\Arquivos D\DESENVOLVIMENTO\Fontes\CadastroItens\CadastroItensCompra\obj\Debug\CadastroItensCompra.Properties.Resources.resources
+D:\Arquivos D\DESENVOLVIMENTO\Fontes\CadastroItens\CadastroItensCompra\obj\Debug\CadastroItensCompra.csproj.GenerateResource.cache
+D:\Arquivos D\DESENVOLVIMENTO\Fontes\CadastroItens\CadastroItensCompra\obj\Debug\CadastroItensCompra.csproj.CoreCompileInputs.cache
+D:\Arquivos D\DESENVOLVIMENTO\Fontes\CadastroItens\CadastroItensCompra\obj\Debug\CadastroItensCompra.exe
+D:\Arquivos D\DESENVOLVIMENTO\Fontes\CadastroItens\CadastroItensCompra\obj\Debug\CadastroItensCompra.pdb
